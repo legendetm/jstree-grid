@@ -185,7 +185,7 @@
 
 					$('<style type="text/css">'+styles.join("\n")+'</style>').appendTo("head");
 				}
-				this.gridWrapper = $("<div></div>").addClass("jstree-grid-wrapper").appendTo(gridparent);
+				this.gridWrapper = $("<div></div>").addClass("jstree-grid-wrapper").insertAfter(container);
 				this.midWrapper = $("<div></div>").addClass("jstree-grid-midwrapper").appendTo(this.gridWrapper);
 				// set the wrapper width
 				if (s.width) {
